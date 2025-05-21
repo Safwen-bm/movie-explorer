@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+@import url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ffba00;
+  font-size: 24px;
+}
+
+.slick-dots li button:before {
+  color: #ffba00;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffba00;
+}
+
+.movie-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+/* Dark Mode */
+html.dark {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+html.dark .bg-gray-50 {
+  background-color: #2d3748;
+}
+
+html.dark .text-gray-900 {
+  color: #e2e8f0;
+}
+
+html.dark .bg-gradient-to-b.from-gray-100.to-gray-200 {
+  background-image: linear-gradient(to bottom, #4a5568, #2d3748);
+}
+
+html.dark .bg-gradient-to-b.from-gray-200.to-gray-300 {
+  background-image: linear-gradient(to bottom, #2d3748, #1a202c);
+}
+
+html.dark .text-gray-800 {
+  color: #cbd5e0;
+}
+
+html.dark .bg-white {
+  background-color: #4a5568;
+}
+
+html.dark .text-gray-600 {
+  color: #a0aec0;
+}
+
+html.dark .bg-gray-500 {
+  background-color: #718096;
+}
+
+html.dark .bg-gray-500:hover {
+  background-color: #4a5568;
+}
+
+html.dark .bg-red-500 {
+  background-color: #e53e3e;
+}
+
+html.dark .bg-red-500:hover {
+  background-color: #c53030;
+}
+
+html.dark .text-red-500 {
+  color: #fc8181;
+}
