@@ -7,7 +7,7 @@ function Footer() {
           <a href="https://www.themoviedb.org" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
             <i className="fab fa-tmdb"></i> TMDB
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+          <a href="https://github.com/Safwen-bm" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
             <i className="fab fa-github"></i> GitHub
           </a>
         </div>
