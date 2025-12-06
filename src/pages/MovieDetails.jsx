@@ -12,7 +12,7 @@ function MovieDetails({ watchlist, setWatchlist }) {
   const [relatedMovies, setRelatedMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+  const API_KEY = "1c0d2817af190c9399c5511e0b6bb24f";
 
   useEffect(() => {
     axios

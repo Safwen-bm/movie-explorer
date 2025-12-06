@@ -8,7 +8,7 @@ import MovieSlider from '../components/MovieSlider';
 function Home({ watchlist, setWatchlist }) {
   const [featuredMovie, setFeaturedMovie] = useState(null);
   const [nowPlaying, setNowPlaying] = useState([]);
-  const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+  const API_KEY = "1c0d2817af190c9399c5511e0b6bb24f";
 
   useEffect(() => {
     axios
