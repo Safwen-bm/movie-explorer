@@ -1,5 +1,5 @@
 import { useState, useEffect, createContext, useContext } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Movies from './pages/Movies';
 import MovieDetails from './pages/MovieDetails';
@@ -24,14 +24,14 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home watchlist={watchlist} setWatchlist={setWatchlist} />} />
           <Route path="/movies" element={<Movies watchlist={watchlist} setWatchlist={setWatchlist} />} />
           <Route path="/movie/:id" element={<MovieDetails watchlist={watchlist} setWatchlist={setWatchlist} />} />
           <Route path="/watchlist" element={<Watchlist watchlist={watchlist} setWatchlist={setWatchlist} />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeContext.Provider>
   );
 }
